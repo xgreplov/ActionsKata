@@ -42,7 +42,7 @@ jobs:
         with:
           dotnet-version: '3.1.x'
       - name: Run a one-line test script
-        run: echo Hello, world!
+        run: dotnet build welcome
         
   publish:
     runs-on: ubuntu-latest
@@ -53,6 +53,6 @@ jobs:
         with:
           dotnet-version: '3.1.x'
       - name: Run a one-line publish script
-        run: echo Hello, world!  
+        run: dotnet build test
   
 
